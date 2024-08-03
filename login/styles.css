@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #d3051d;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.header img {
+    height: 50px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.top-bar {
+    background-color: #d3051d;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+}
+
+.top-bar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.top-bar ul li {
+    margin: 0 10px;
+}
+
+.top-bar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-header {
+    background-color: #d3051d;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+#logo {
+    height: 50px;
+}
+
+.main-header h1 {
+    margin: 0 20px;
+    font-size: 1.5em;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container label {
+    margin-bottom: 5px;
+}
+
+.login-container input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-container button {
+    padding: 10px;
+    background-color: #d3051d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #a00414;
+}
+
+.login-container p {
+    text-align: center;
+}
+
+.login-container p a {
+    color: #d3051d;
+    text-decoration: none;
+}
+
+.login-container p a:hover {
+    text-decoration: underline;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 10px;
+}
+
+.footer-section h2 {
+    margin-top: 0;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+}

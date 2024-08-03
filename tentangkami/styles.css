@@ -2,21 +2,26 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #d3051d;
+    color: white;
+    padding: 10px 0;
 }
 
 .top-bar {
-    background-color: #d3051d;
-    color: white;
     display: flex;
     justify-content: space-between;
-    padding: 5px 20px;
+    padding: 0 20px;
 }
 
 .top-bar ul {
     list-style: none;
-    display: flex;
     margin: 0;
     padding: 0;
+    display: flex;
 }
 
 .top-bar ul li {
@@ -29,8 +34,6 @@ body {
 }
 
 .main-header {
-    background-color:#d3051d;
-    color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -46,72 +49,33 @@ body {
     font-size: 1.5em;
 }
 
-.search-bar {
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-}
-
-.search-bar input {
-    width: 70%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-}
-
-.search-bar button {
-    background-color: white;
-    border: none;
-    padding: 5px;
-    border-radius: 3px;
-    margin-left: 5px;
-}
-
-.search-bar button img {
-    height: 20px;
-}
-
-.cart-icon img {
-    height: 30px;
-    background-color: white;
-    padding: 5px;
-    border-radius: 5px;
-}
-
-.product-list {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.main {
     padding: 20px;
 }
 
-.product {
-    border: 1px solid #ddd;
-    padding: 10px;
-    width: 200px;
-    margin: 10px;
-    border-color: #d3051d;
-    border-radius: 5px;
-}
-
-.product img {
-    width: 100%;
-    height: auto;
-}
-
-.product button {
-    background-color: white;
-    border: 2px solid #d3051d;
+.tidaksponsor {
+    text-align: center;
     color: #d3051d;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
 }
 
-.product button:hover {
-    background-color: #d3051d;
-    color: white;
+.about-us {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-us h2 {
+    color: #d3051d;
+}
+
+.about-us ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-us ul li {
+    margin-bottom: 10px;
 }
 
 footer {
@@ -184,11 +148,3 @@ footer {
     z-index: 1000;
 }
 
-.tidaksponsor {
-    text-align: center;
-    color: #d3051d;
-}
-
-.ikikeranjangkuning {
-    margin-right: 20px;
-}

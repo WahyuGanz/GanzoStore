@@ -4,42 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Halaman Sedang Maintenance</title>
+    <title>Login - GANZO STORE</title>
 </head>
 <body>
     <header>
         <div class="top-bar">
             <ul>
                 <li><a href="../index.html">Halaman Utama</a></li>
-                <li><a href="maintenance.html">Ikuti IG kami</a></li>
+                <li><a href="../maintenance/maintenance.html">Ikuti IG kami</a></li>
             </ul>
         </div>
         <div class="main-header">
             <img src="../images/logo.png" alt="Logo" id="logo">
             <h1>GANZO STORE</h1>
+            
         </div>
     </header>
     <main>
-        <div class="maintenance-message">
-            <h2>Halaman Sedang Maintenance</h2>
-            <p>Maaf atas ketidaknyamanannya. Kami sedang melakukan perbaikan untuk meningkatkan layanan kami. Silakan kembali lagi nanti.</p>
-            <h2>Silahkan Kembali Ke Halaman Utama</h2>
-            <h2><a href="../index.html">Klik Disini</a></h2>
+        <div class="login-container">
+            <h2>Login</h2>
+            <form action="../index.html" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit">Log In</button>
+            </form>
+            <p>Belum punya akun? <a href="../maintenance/maintenance.html">Daftar di sini</a></p>
+            <p>Default Username: ganzostore</p>
+            <p>Default Password: 12345678</p>
         </div>
     </main>
     <footer>
         <div class="footer-content">
             <div class="footer-section about">
                 <h2>TENTANG KAMI</h2>
-                <p>Kami adalah tim dari GANZO STUDIO dan ini adalah project tugas PKK untuk membuat produk digital.</p>
+                <p>Kami adalah tim dari GANZO STUDIO dan ini adalah project tugas PKK untuk membuat produk digital.
+                </p>
             </div>
             <div class="footer-section links">
                 <h2>TAUTAN</h2>
                 <ul>
                     <li><a href="../index.html">Halaman Utama</a></li>
-                    <li><a href="maintenance.html">Produk</a></li>
+                    <li><a href="../maintenance/maintenance.html">Produk</a></li>
                     <li><a href="../tentangkami/aboutme.html">Tentang Kami</a></li>
-                    <li><a href="maintenance.html">Kontak</a></li>
+                    <li><a href="../maintenance/maintenance.html">Kontak</a></li>
                 </ul>
             </div>
             <div class="footer-section contact">
@@ -57,4 +68,3 @@
     </footer>
 </body>
 </html>
-
