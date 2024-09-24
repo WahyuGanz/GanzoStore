@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Keranjang Belanja - GANZO STORE</title>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <ul>
+                <li><a href="../index.html">Halaman Utama</a></li>
+            </ul>
+            <ul class="top-bar-right">
+                <li><a href="../maintenance/maintenance.html">Bantuan</a></li>
+                <li><a href="../daftar/daftar.html">Daftar</a></li>
+                <li><a href="../login/login.html">Log In</a></li>
+            </ul>
+        </div>
+        <div class="main-header">
+            <img src="../images/logo.png" alt="Logo" id="logo">
+            <h1>GANZO STORE</h1>
+        </div>
+    </header>
+    <main>
+        <div class="tidaksponsor">
+            <h2>CONTOH TOK LEE, OJO DI CHECKOUT TENANAN</h2>
+            <h1>KERANJANG BELANJA</h1>
+            <p><b>Berikut adalah produk yang telah Anda pilih:</b></p>
+        </div>
+        <div class="product-list" id="cart-list">
+            <!-- Produk dalam keranjang akan ditambahkan di sini oleh JavaScript -->
+        </div>
+        <div class="checkout">
+            <button id="checkout-button">Lanjutkan ke CheckOut</button>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>TENTANG KAMI</h2>
+                <p>Kami adalah tim dari GANZO STUDIO dan ini adalah project tugas PKK untuk membuat produk digital.
+                </p>
+            </div>
+            <div class="footer-section links">
+                <h2>TAUTAN</h2>
+                <ul>
+                    <li><a href="../index.html">Halaman Utama</a></li>
+                    <li><a href="../maintenance/maintenance.html">Produk</a></li>
+                    <li><a href="../tentangkami/aboutme.html">Tentang Kami</a></li>
+                    <li><a href="../maintenance/maintenance.html">Kontak</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>KONTAK KAMI LUR</h2>
+                <ul>
+                    <li>Email: Privasi Bos</li>
+                    <li>Phone: Privasi Bos</li>
+                    <li>Address: Wetan dalan madep ngulon</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 GANZO STORE | GANZO STUDIO
+        </div>
+    </footer>
+
+    <!-- Elemen Pop-up Bagian Iki -->
+    <div id="popup" class="popup">Produk telah ditambahkan ke keranjang.</div>
+
+    <!-- Elemen Pop-up untuk Mobile -->
+    <div id="popup-mobile" class="popup-mobile">Pengguna Mobile Wajib Aktifkan Mode Desktop</div>
+
+    <script src="../js/scripts.js"></script>
+    <script>
+        // Contoh data produk dalam keranjang
+        const cartProducts = [
+            {
+                name: "Dell Alienware AW3420DW",
+                description: "Rp18.000.000",
+                image: "../images/product34.jpg"
+            },
+            {
+                name: "DJI Mavic Air 2",
+                description: "Rp15.000.000",
+                image: "../images/product36.jpg"
+            }
+        ];
+
+        const cartList = document.getElementById('cart-list');
+
+        cartProducts.forEach(product => {
+            const productDiv = document.createElement('div');
+            productDiv.classList.add('product');
+
+            const productImage = document.createElement('img');
+            productImage.src = product.image;
+            productImage.alt = product.name;
+
+            const productName = document.createElement('h2');
+            productName.textContent = product.name;
+
+            const productDescription = document.createElement('p');
+            productDescription.textContent = product.description;
+
+            productDiv.appendChild(productImage);
+            productDiv.appendChild(productName);
+            productDiv.appendChild(productDescription);
+
+            cartList.appendChild(productDiv);
+        });
+
+        const checkoutButton = document.getElementById('checkout-button');
+        checkoutButton.addEventListener('click', function() {
+            alert('Lanjutkan ke halaman CheckOut');
+        });
+    </script>
+</body>
+</html>

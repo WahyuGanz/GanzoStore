@@ -225,6 +225,156 @@ document.addEventListener('DOMContentLoaded', function() {
             description: "Rp40.000.000",
             image: "images/product45.jpg"
         },
+        {
+            name: "Samsung 970 EVO Plus",
+            description: "Rp2.500.000",
+            image: "images/ssd1.png"
+        },
+        {
+            name: "WD Black SN750",
+            description: "Rp3.000.000",
+            image: "images/ssd2.png"
+        },
+        {
+            name: "Corsair Force MP510",
+            description: "Rp2.000.000",
+            image: "images/ssd3.png"
+        },
+        {
+            name: "ADATA XPG SX8200",
+            description: "Rp1.800.000",
+            image: "images/ssd4.jpg"
+        },
+        {
+            name: "Kingston A2000",
+            description: "Rp1.500.000",
+            image: "images/ssd5.jpg"
+        },
+        {
+            name: "ASUS RT-AC86U",
+            description: "Rp3.500.000",
+            image: "images/router1.png"
+        },
+        {
+            name: "TP-Link Archer AX6000",
+            description: "Rp2.500.000",
+            image: "images/router2.jpg"
+        },
+        {
+            name: "Netgear Nighthawk RAX80",
+            description: "Rp4.000.000",
+            image: "images/router3.jpg"
+        },
+        {
+            name: "Linksys EA8300",
+            description: "Rp2.000.000",
+            image: "images/router4.png"
+        },
+        {
+            name: "D-Link DIR-882",
+            description: "Rp1.800.000",
+            image: "images/router5.jpg"
+        },
+        {
+            name: "Samsung QLED 4K",
+            description: "Rp15.000.000",
+            image: "images/tv1.png"
+        },
+        {
+            name: "LG OLED C9",
+            description: "Rp20.000.000",
+            image: "images/tv2.jpg"
+        },
+        {
+            name: "Sony Bravia 4K",
+            description: "Rp12.000.000",
+            image: "images/tv3.png"
+        },
+        {
+            name: "TCL 4K UHD",
+            description: "Rp8.000.000",
+            image: "images/tv4.jpg"
+        },
+        {
+            name: "Hisense Laser TV",
+            description: "Rp18.000.000",
+            image: "images/tv5.png"
+        },
+        {
+            name: "ASUS PRIME Z390-A",
+            description: "Rp3.500.000",
+            image: "images/motherboard1.png"
+        },
+        {
+            name: "MSI MPG Z390 GAMING PLUS",
+            description: "Rp3.000.000",
+            image: "images/motherboard2.jpg"
+        },
+        {
+            name: "GIGABYTE Z390 AORUS MASTER",
+            description: "Rp4.000.000",
+            image: "images/motherboard3.jpg"
+        },
+        {
+            name: "ASROCK Z390 EXTREME",
+            description: "Rp2.500.000",
+            image: "images/motherboard4.jpg"
+        },
+        {
+            name: "ASUS PRIME X570-UD",
+            description: "Rp4.500.000",
+            image: "images/motherboard5.jpg"
+        },
+        {
+            name: "AMD Ryzen 9 5900X",
+            description: "Rp15.000.000",
+            image: "images/cpu1.jpg"
+        },
+        {
+            name: "Intel Core i9-11900K",
+            description: "Rp18.000.000",
+            image: "images/cpu2.jpg"
+        },
+        {
+            name: "AMD Ryzen 7 5800X",
+            description: "Rp10.000.000",
+            image: "images/cpu3.jpg"
+        },
+        {
+            name: "Intel Core i7-11700K",
+            description: "Rp12.000.000",
+            image: "images/cpu4.jpg"
+        },
+        {
+            name: "AMD Ryzen 5 5600X",
+            description: "Rp8.000.000",
+            image: "images/cpu5.jpg"
+        },
+        {
+            name: "Western Digital Caviar Blue 1TB",
+            description: "Rp1.500.000",
+            image: "images/hdd1.jpg"
+        },
+        {
+            name: "Seagate BarraCuda 2TB",
+            description: "Rp2.500.000",
+            image: "images/hdd2.jpg"
+        },
+        {
+            name: "Toshiba X300 12TB",
+            description: "Rp3.500.000",
+            image: "images/hdd3.jpg"
+        },
+        {
+            name: "WD Black 4TB",
+            description: "Rp4.500.000",
+            image: "images/hdd4.jpg"
+        },
+        {
+            name: "Seagate IronWolf 6TB",
+            description: "Rp6.000.000",
+            image: "images/hdd5.jpg"
+        },
     ];
 
     const productList = document.getElementById('product-list');
@@ -233,9 +383,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const productDiv = document.createElement('div');
         productDiv.classList.add('product');
 
-        const productImage = document.createElement('img');
-        productImage.src = product.image;
-        productImage.alt = product.name;
+        const productImage = document.createElement('a');
+        productImage.href = `informasi-produk/${product.name}.html`;
+        productImage.innerHTML = `<img src="${product.image}" alt="${product.name}">`;
 
         const productName = document.createElement('h2');
         productName.textContent = product.name;

@@ -1,26 +1,32 @@
+/* Styles untuk halaman keranjang.html */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #d3051d;
+    color: white;
+    padding: 10px 0;
 }
 
 .top-bar {
-    background-color: #d3051d;
-    color: white;
     display: flex;
     justify-content: space-between;
-    padding: 5px 20px;
+    padding: 0 20px;
 }
 
 .top-bar ul {
     list-style: none;
-    display: flex;
     margin: 0;
     padding: 0;
+    display: flex;
 }
 
 .top-bar ul li {
-    margin: 0 10px;
+    margin-right: 20px;
 }
 
 .top-bar ul li a {
@@ -29,15 +35,13 @@ body {
 }
 
 .main-header {
-    background-color:#d3051d;
-    color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 20px;
 }
 
-#logo {
+.main-header img {
     height: 50px;
 }
 
@@ -46,36 +50,22 @@ body {
     font-size: 1.5em;
 }
 
-.search-bar {
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
+main {
+    padding: 20px;
 }
 
-.search-bar input {
-    width: 70%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
+.tidaksponsor {
+    text-align: center;
+    color: #d3051d;
 }
 
-.search-bar button {
-    background-color: white;
-    border: none;
-    padding: 5px;
-    border-radius: 3px;
-    margin-left: 5px;
+.tidaksponsor h2 {
+    color: #222;
+    transition: color 0.3s ease-in-out;
 }
 
-.search-bar button img {
-    height: 20px;
-}
-
-.ikon-keranjang img {
-    height: 30px;
-    background-color: white;
-    padding: 5px;
-    border-radius: 5px;
+.tidaksponsor:hover h2 {
+    color: #d3051d;
 }
 
 .product-list {
@@ -99,6 +89,15 @@ body {
     height: auto;
 }
 
+.product h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.product p {
+    color: #555;
+}
+
 .product button {
     background-color: white;
     border: 2px solid #d3051d;
@@ -112,6 +111,21 @@ body {
 .product button:hover {
     background-color: #d3051d;
     color: white;
+}
+
+.checkout {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.checkout button {
+    background-color: #d3051d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
 }
 
 footer {
@@ -182,13 +196,4 @@ footer {
     padding: 10px 20px;
     border-radius: 5px;
     z-index: 1000;
-}
-
-.tidaksponsor {
-    text-align: center;
-    color: #d3051d;
-}
-
-.ikikeranjangkuning {
-    margin-right: 20px;
 }
